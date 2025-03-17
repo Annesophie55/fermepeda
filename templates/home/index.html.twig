@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
+{% endblock %}
+
+
+
+{# {% block javascripts %}
+    <script src="{{ asset('js/home.js') }}"></script>
+{% endblock %} #}
+{% block meta %}
+    <meta name="description" content="La Ferme Pédagogique de Jean est un lieu d'apprentissage et de découverte de la nature.">
+    <meta name="keywords" content="ferme, pédagogique, nature, éducation">
+    <meta name="author" content="Jean-Christophe Daguzan">
+{% endblock %}
+
+
+
+
+{% block body %}
+
+{% include 'partials/header.html.twig' %}
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code>C:/wamp64/www/ferme-pedagogique/src/Controller/HomeController.php</code></li>
+        <li>Your template at <code>C:/wamp64/www/ferme-pedagogique/templates/home/index.html.twig</code></li>
+    </ul>
+</div>
+{% endblock %}

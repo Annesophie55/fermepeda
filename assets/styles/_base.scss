@@ -1,0 +1,75 @@
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gray-dark);
+  margin: 0;
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+main{
+  margin-top: 70px;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+figcaption {
+  font-size: 0.8em;
+  color: var(--gray-dark);
+  text-align: left;
+  margin-left: 7px;
+}
+
+.section-title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+  background: rgb(12, 173, 161);
+  background: linear-gradient(212deg, rgba(12, 173, 161, 1) 30%, rgba(12, 148, 138, 0.9831168356906163) 48%, rgba(14, 124, 139, 1) 78%);
+  font-family: var(--font-secondary);
+  color: var(--white);
+  padding: 45px;
+}
+
+p{
+  font-family: var(--font-primary);
+}
+
+.credits {
+  opacity: 0.5;
+  font-size: 0.5rem;
+}
