@@ -1,57 +1,52 @@
+<header>
+  <!-- Logo -->
+  <a href="/" class="logo">
+    <img src="{{ asset('images/logo.svg') }}" alt="Logo de La Ferme Pédagogique de Jean" width="100" />
+    <span class="logo-text">La Ferme Pédagogique de Jean</span>
+  </a>
+
+  <!-- Navigation -->
+<!-- Navigation -->
+<nav id="navigation">
+  <ul class="nav-links">
+    <li class="nav-link"><a href="#">Accueil</a></li>
+    <li class="nav-link"><a href="#">Scolaire et Groupes</a></li>
+    <li class="nav-link"><a href="#">Grand public</a></li>
+    <li class="nav-link"><a href="#">Camping</a></li>
+    <li class="nav-link"><a href="#">Événements</a></li>
+    <li class="nav-link"><a href="#">Contact</a></li>
+
+    <!-- Lien Facebook ajouté au menu mobile uniquement -->
+    <li class="nav-link mobile-only">
+      <a href="https://www.facebook.com/la.ferme.pédagogique.de.jean" 
+         aria-label="Lien vers le Facebook de la Ferme Pédagogique de Jean">
+        <i class="fa-brands fa-facebook"></i> Facebook
+      </a>
+    </li>
+  </ul>
+</nav>
 
 
- <header>
-    <!-- Logo -->
-    <a href:"/" class="logo">
-      <img src="{{ asset('images/logo.svg') }}" alt="Logo de La ferme pédagogique de Jean" width="100" />
-    </a>
+  <!-- Bouton Hamburger et Extras -->
+  <div class="header-item-group">
+    <button class="hamburger" aria-label="Menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
 
-    <!-- Navigation -->
-    <nav id="navigation">
-      <ul class="nav-links">
-        <li class="nav-link"><a href:"#">Accueil</a></li>
-        <li class="nav-link"><a href:"#">Scolaire et Groupes</a></li>
-        <li class="nav-link"><ak href:"#">Grand public</a></li>
-        <li class="nav-link"><a href:"#">Camping</a></li>
-        <li class="nav-link"><a href:"#">Evénements</a>
-          <ul>
-            <li class="nav-link"><a href="#">Fête de Pâques</a></li>
-            <li class="nav-link"><a href="#">Anniversaires</a></li>
-            <li class="nav-link"><a href="#">Balades à dos d'ânes</a></li>
-          </ul>
+    <div class="header-extras">
+      <ul class="social-links">
+        <li>
+          <a href="https://www.facebook.com/la.ferme.pédagogique.de.jean" 
+             aria-label="Lien vers le Facebook de la Ferme Pédagogique de Jean">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
         </li>
-        <li class="nav-link"><a href:"#">Contact</a></li>
       </ul>
-          <div class="header-extras-mobile">
-            <!-- <LanguageSwitch /> -->
-            <ul class="social-links">
-              <li>
-                <a href="https://www.facebook.com/la.ferme.pédagogique.de.jean" aria-label="Lien vers le Facebook de la Ferme Pédagogique de Jean">
-                  Facebook
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Bouton Hamburger et Extras -->
-    <div class="header-item-group">
-      <button class="hamburger" aria-label="Menu">
-        <div></div>
-        <div></div>
-        <div></div>
-      </button>
-
-      <div class="header-extras">
-        <!-- <LanguageSwitch /> -->
-        <ul class="social-links">
-              <li>
-                <a href="https://www.facebook.com/la.ferme.pédagogique.de.jean" aria-label="Lien vers le Facebook de la Ferme Pédagogique de Jean">Facebook
-                </a>
-              </li>
-        </ul>
-      </div>
     </div>
-  </header>
+  </div>
+</header>
+
+<!-- Fin du header -->
+
