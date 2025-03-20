@@ -1,0 +1,13 @@
+{% extends '@EasyAdmin/layout.html.twig' %}
+
+{% block main %}
+    <h2>Bienvenue sur l'administration de la Ferme Pédagogique de Jean</h2>
+
+    <div>
+        <p>Gérez les commentaires et tarifs depuis ce tableau de bord.</p>
+        <ul>
+            <li><a href="{{ path('admin') }}">Accéder aux Commentaires</a></li>
+            <li><a href="{{ path('admin') }}">Accéder aux Tarifs</a></li>
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,5 @@
+easy_admin:
+    resource: .
+    type: easyadmin.routes
+    prefix: /admin
+

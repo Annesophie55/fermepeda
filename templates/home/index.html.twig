@@ -17,18 +17,243 @@
     <meta name="author" content="Jean-Christophe Daguzan">
 {% endblock %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/homepage.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+{% endblock %}
+
+
+
 
 
 
 {% block body %}
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Bienvenue à la Ferme Pédagogique de Jean</h1>
+            <p>Un lieu d'apprentissage et de découverte de la nature.</p>
+            <a href="#" class="btn">Découvrir la ferme</a>
+        </div>
+        <video src="{{ asset('videos/test.mp4')}}" autoplay loop muted playsinline></video>
+    </section>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <section class="about">
+        <h2>Bienvenue à <strong>La Ferme de Jean</strong> !</h2>
+        <p><span class="emoji">🌿</span> Ici, à <strong>La Ferme Pédagogique de Jean</strong>, on vit au rythme de la nature et des animaux. C’est un lieu où <strong>petits et grands</strong> peuvent s’évader, apprendre et partager des moments uniques au grand air.</p>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/wamp64/www/ferme-pedagogique/src/Controller/HomeController.php</code></li>
-        <li>Your template at <code>C:/wamp64/www/ferme-pedagogique/templates/home/index.html.twig</code></li>
-    </ul>
-</div>
+        <p><span class="emoji">👨‍🌾</span> <strong>Jean-Christophe Daguzan</strong>, passionné et héritier d’une tradition familiale, a repris la ferme avec une idée en tête : <strong>permettre à chacun de découvrir le monde agricole autrement</strong>. Il s’efforce chaque jour de faire vivre ce coin de nature en proposant des <strong>activités authentiques et locales</strong>.</p>
+
+        <p><span class="emoji">🐥</span> Mais attention, ici, c’est <strong>Jean, le mini fermier en chef</strong> ! Du haut de ses bottes, il est toujours prêt à faire découvrir les animaux, à nourrir les chèvres et à partager son <strong>amour pour la ferme</strong> avec les visiteurs.</p>
+
+        <p><span class="emoji">🌾</span> <strong>Visiter la Ferme de Jean, c’est bien plus qu’une simple sortie</strong> : c’est <strong>soutenir une ferme locale</strong> et contribuer à la <strong>préservation d’un savoir-faire précieux</strong>. Que ce soit pour <strong>une journée en famille</strong>, une sortie scolaire ou un séjour en camping, vous repartirez avec des souvenirs plein la tête !</p>
+
+        <p><span class="emoji">💛</span> Venez partager avec nous l’aventure d’une <strong>ferme vivante et engagée</strong> !</p>
+    </section>
+
+
+    <section class="why-visit">
+        <h2>Pourquoi venir chez nous ?</h2>
+        <div class="benefits">
+            <div class="benefit">
+                <img src="{{ asset('images/icon-education.svg') }}" alt="Expérience pédagogique immersive">
+                <span>Expérience pédagogique immersive</span>
+            </div>
+            <div class="benefit">
+                <img src="{{ asset('images/icon-family.svg') }}" alt="Adapté aux familles et aux groupes">
+                <span>Adapté aux familles et aux groupes</span>
+            </div>
+            <div class="benefit">
+                <img src="{{ asset('images/icon-animals.svg') }}" alt="Contact direct avec les animaux">
+                <span>Contact direct avec les animaux</span>
+            </div>
+            <div class="benefit">
+                <img src="{{ asset('images/icon-nature.svg') }}" alt="Un cadre naturel exceptionnel">
+                <span>Un cadre naturel exceptionnel</span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="activities">
+        <!-- Carte 1 : Scolaire et Groupes -->
+        <div class="card">
+            <h2 class="card-title">Scolaire et Groupes</h2>
+            <div class="card-main">
+                <img src="{{ asset('images/scolaire.jpg') }}" alt="Sortie scolaire">
+                <div class="card-overlay">
+                    <p>Organisez une sortie pédagogique inoubliable !</p>
+                    <a href="#" class="btn">En savoir plus</a>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Carte 2 : Grand Public -->
+        <div class="card">
+            <h2 class="card-title">Grand Public</h2>
+            <div class="card-main">
+                <img src="{{ asset('images/grand-public.jpg') }}" alt="Famille à la ferme">
+                <div class="card-overlay">
+                    <p>Venez en famille découvrir nos animaux et activités !</p>
+                    <a href="#" class="btn">Nos activités</a>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Carte 3 : Camping -->
+        <div class="card">
+            <h2 class="card-title">Camping</h2>
+            <div class="card-main">
+                <img src="{{ asset('images/camping.jpg') }}" alt="Camping à la ferme">
+                <div class="card-overlay">
+                    <p>Dormez au cœur de la nature avec notre camping familial !</p>
+                    <a href="#" class="btn">Voir les hébergements</a>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Carte 4 : Balade à dos d’ânes -->
+        <div class="card">
+            <h2 class="card-title">Balade à dos d’ânes</h2>
+            <div class="card-main">
+                <img src="{{ asset('images/balade-anes.jpg') }}" alt="Balade à dos d’ânes">
+                <div class="card-overlay">
+                    <p>Profitez d’une balade unique en pleine nature !</p>
+                    <a href="#" class="btn">En savoir plus</a>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Carte 5 : Fête de Pâques -->
+        <div class="card">
+            <h2 class="card-title">Fête de Pâques</h2>
+            <div class="card-main">
+                <img src="{{ asset('images/paques.jpg') }}" alt="Fête de Pâques à la ferme">
+                <div class="card-overlay">
+                    <p>Participez à notre grande chasse aux œufs !</p>
+                    <a href="#" class="btn">Voir les détails</a>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Carte 6 : Anniversaire à la ferme -->
+        <div class="card">
+            <h2 class="card-title">Anniversaire à la ferme</h2>
+            <div class="card-main">
+                <img src="{{ asset('images/anniversaire.jpg') }}" alt="Fêter son anniversaire à la ferme">
+                <div class="card-overlay">
+                    <p>Offrez à votre enfant un anniversaire inoubliable !</p>
+                    <a href="#" class="btn">Organiser un anniversaire</a>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="testimonials">
+        <h2>Ils ont visité la Ferme Pédagogique de Jean !</h2>
+
+            <!-- Avis récents -->
+        {% for commentaire in commentaires %}
+            <div class="comment">
+                <p><strong>{{ commentaire.nom }}</strong> - {{ commentaire.note }}⭐</p>
+                <p>{{ commentaire.commentaire }}</p>
+            </div>
+        {% else %}
+            <p>Aucun avis pour le moment.</p>
+        {% endfor %}
+
+        <!-- Icône pour ouvrir le formulaire -->
+        <div class="add-review">
+            <button id="openReviewForm">
+                ✍️ Ajouter un avis
+            </button>
+        </div>
+
+        <!-- Formulaire caché par défaut -->
+        <div class="review-form" id="reviewForm" style="display: none;">
+            <h3>Donnez votre avis</h3>
+            <form method="post">
+                {{ form_start(form) }}
+
+                <label for="nom">Votre prénom :</label>
+                {{ form_widget(form.name) }}
+
+                <label>Votre note :</label>
+                <div class="rating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                {{ form_widget(form.rate) }}
+
+                <label for="commentaire">Votre commentaire :</label>
+                {{ form_widget(form.content) }}
+
+                <button type="submit">Envoyer mon avis</button>
+
+                {{ form_end(form) }}
+            </form>
+
+        </div>
+    </section>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Gestion de l'affichage du formulaire
+    document.getElementById("openReviewForm").addEventListener("click", function() {
+        document.getElementById("reviewForm").style.display = "block";
+    });
+    document.getElementById("closeReviewForm").addEventListener("click", function() {
+        document.getElementById("reviewForm").style.display = "none";
+    });
+    // Gestion de la notation par étoiles
+
+       const stars = document.querySelectorAll(".star");
+        const ratingInput = document.getElementById("rating");
+
+        stars.forEach(star => {
+            star.addEventListener("mouseover", function () {
+                resetStars();
+                this.classList.add("hover");
+                let prev = this.previousElementSibling;
+                while (prev) {
+                    prev.classList.add("hover");
+                    prev = prev.previousElementSibling;
+                }
+            });
+
+            star.addEventListener("click", function () {
+                resetStars();
+                this.classList.add("selected");
+                let prev = this.previousElementSibling;
+                while (prev) {
+                    prev.classList.add("selected");
+                    prev = prev.previousElementSibling;
+                }
+                ratingInput.value = this.getAttribute("data-value");
+            });
+
+            star.addEventListener("mouseleave", function () {
+                resetHover();
+            });
+        });
+
+        function resetStars() {
+            stars.forEach(star => {
+                star.classList.remove("selected");
+            });
+        }
+
+        function resetHover() {
+            stars.forEach(star => {
+                star.classList.remove("hover");
+            });
+        }
+});
+
+</script>
 {% endblock %}
